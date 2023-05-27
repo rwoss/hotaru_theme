@@ -6,11 +6,11 @@
         </div>
       </div>
     </td>
-    <td>{{ server.name }}</td>
+    <td>{{ server.alias }}</td>
     <td>{{ server.type }}</td>
     <td>{{ server.location }}</td>
     <td>{{ server.uptime || '–' }}</td>
-    <td>{{ getStatus ? server.load : '-' }}</td>
+    <td>{{ getStatus ? server.load_5 : '-' }}</td>
     <td>{{
         getStatus ? `${tableRowByteConvert(server.network_rx)} | ${tableRowByteConvert(server.network_tx)}` : '–'
       }}

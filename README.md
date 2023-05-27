@@ -1,5 +1,7 @@
 # Hotaru_theme
 
+个人自用精简首页顶图 添加一些参数
+
 **Notice:** See: https://github.com/cokemine/hotaru_theme/commit/ae80618
 
 基于 Vue 3 和 Semantic UI 打造的“船新” ServerStatus 主题。

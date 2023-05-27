@@ -3,18 +3,18 @@
     <div class="ui fluid card">
       <div class="card-header">
         <svg viewBox="0 0 100 100" class="flag-icon">
-          <use :xlink:href="`#${server.region}`"></use>
+          <use :href="`#${server.location}`"></use>
         </svg>
-        <span> {{ server.name }} </span>
-        <p>{{ server.type }}</p>
+        <span> {{ server.alias }} </span>
       </div>
       <div class="ui tiny progress success">
         <div class="bar" :style="{width: getStatus ? `${getRAMStatus.toString()}%` : '0%'}">
         </div>
       </div>
       <div class="card-content">
-        <p>Network: {{ `${tableRowByteConvert(server.network_rx)} | ${tableRowByteConvert(server.network_tx)}` }}</p>
-        <p>负载状态: {{ typeof server.load !== 'undefined' ? server.load : 'Offline' }}</p>
+        <p>负载状态	{{ typeof server.load_5 !== 'undefined' ? server.load_5 : 'Offline' }}</p>
+		<p>网络状态	{{ `${tableRowByteConvert(server.network_rx)} | ${tableRowByteConvert(server.network_tx)}` }}</p>
+		<p>总用流量	{{ `${tableRowByteConvert(server.network_in)} | ${tableRowByteConvert(server.network_out)}` }}</p>
       </div>
     </div>
   </div>

@@ -53,11 +53,6 @@ export default defineComponent({
 </script>
 
 <style>
-body {
-  /*Replace your background image at this place!*/
-  background: url("./assets/img/bg_parts.png") repeat-y left top, url('./assets/img/bg.png') repeat left top;
-}
-
 /*Global*/
 div.bar {
   min-width: 0 !important;
@@ -117,12 +112,6 @@ div.bar {
     font-size: 1.25rem;
     margin-bottom: 0.6rem;
   }
-
-  #app #header {
-    height: 20rem;
-    /*Replace your header image (for mobile use) at this place!*/
-    background: url("assets/img/cover_mobile.png") no-repeat center center !important;
-  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -132,7 +121,7 @@ div.bar {
 }
 
 @media only screen and (max-width: 660px) {
-  #load, tr td:nth-child(6) {
+  #load_5, tr td:nth-child(6) {
     display: none;
   }
 }

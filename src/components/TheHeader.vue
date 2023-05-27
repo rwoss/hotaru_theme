@@ -23,10 +23,7 @@ export default defineComponent({
 </script>
 <style>
 #header {
-  height: 25rem;
   position: relative;
-  /*Replace your header image at this place!*/
-  background: url("../assets/img/cover.png") no-repeat center center;
 }
 
 #header::before {
